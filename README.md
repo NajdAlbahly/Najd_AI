@@ -52,16 +52,10 @@ The analysis was performed using Python on a system equipped with an NVIDIA T4 G
 ### Exploratory Data Analysis (EDA)
 Several visualizations were generated to understand patterns:
 *   Mean transaction value by month for the top 5 locations.
-    ![Mean Value by Month for Top Locations]
 *   Average transaction value trend over time for the 'RETAIL' domain.
-    ![Average Transaction Value for RETAIL]
 *   Comparison of average daily transaction value across different domains.
-    ![Average Daily Transaction Value per Domain]
 *   Monthly trends in average daily transaction value across all domains.
-    ![Average Daily Transaction Value by Month]
 *   Correlation heatmap between numeric features (`Value`, `Transaction_count`, `avg_transaction_value`).
-    ![Correlation Heatmap]
-    *Initial analysis showed weak linear correlation between the raw features and the calculated average transaction value.*
 
 ### Modeling
 The dataset (after preprocessing and encoding) was split into training and testing sets using both `cuml.model_selection.train_test_split` and `sklearn.model_selection.train_test_split`. Three regression models were trained to predict `avg_transaction_value`:
