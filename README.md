@@ -67,13 +67,7 @@ The dataset (after preprocessing and encoding) was split into training and testi
 
 ## Results
 
-The performance evaluation yielded the following approximate scores (likely R²):
-
-*   **XGBoost:** ~0.059
-*   **Linear Regression (cuML):** ~0.002
-*   **Random Forest (cuML):** ~0.0015
-
-These low scores indicate that the models, with the current features and preprocessing, struggled to accurately predict the `avg_transaction_value`.
+After performance evaluation between the three model, low scores indicate that the models, with the current features and preprocessing, struggled to accurately predict the `avg_transaction_value`.
 
 **GPU Usage:**
 The notebook confirms the use of an NVIDIA T4 GPU. Training times were recorded:
