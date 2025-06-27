@@ -1,4 +1,3 @@
-# Najd_AI
 
 # AI Analysis on Massive Bank Dataset using GPU Acceleration
 
